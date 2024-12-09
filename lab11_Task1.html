@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Lab 11 – Task 1</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<style>
+		main {
+			padding: 1.5rem 1rem;
+		}
+	</style>
+</head>
+
+<body>
+	<main>
+		<div class="container">
+			<h2 class="mb-4">Календарний план організації НМТ 2024</h2>
+
+			<!-- Етап 1 -->
+			<div class="card mb-3" data-bs-toggle="tooltip" data-bs-placement="top"
+				title="Дата завершення етапу: 14 березня 2024 року">
+				<div class="card-header bg-danger text-white">
+					Етап 1: Реєстрація осіб для участі в основній сесії НМТ
+				</div>
+				<div class="card-body">
+					Термін: 14 лютого – 14 березня 2024 року
+				</div>
+			</div>
+
+			<!-- Етап 2 -->
+			<div class="card mb-3" data-bs-toggle="tooltip" data-bs-placement="top"
+				title="Дата завершення етапу: 15 квітня 2024 року">
+				<div class="card-header bg-danger text-white">
+					Етап 2: Внесення змін у персональному кабінеті
+				</div>
+				<div class="card-body">
+					Термін: 14 березня – 15 квітня 2024 року
+				</div>
+			</div>
+
+			<!-- Етап 3 -->
+			<div class="card mb-3" data-bs-toggle="tooltip" data-bs-placement="top"
+				title="Дата завершення етапу: 15 травня 2024 року">
+				<div class="card-header bg-danger text-white">
+					Етап 3: Додатковий період реєстрації для участі в НМТ
+				</div>
+				<div class="card-body">
+					Термін: 10 травня – 15 травня 2024 року
+				</div>
+			</div>
+
+			<!-- Етап 4 -->
+			<div class="card mb-3" data-bs-toggle="tooltip" data-bs-placement="top"
+				title="Дата завершення етапу: 8 травня 2024 року">
+				<div class="card-header bg-danger text-white">
+					Етап 4: Завантаження запрошень
+				</div>
+				<div class="card-body">
+					Термін: з 8 травня 2024 року
+				</div>
+			</div>
+
+			<!-- Етап 5 -->
+			<div class="card mb-3" data-bs-toggle="tooltip" data-bs-placement="top"
+				title="Дата завершення етапу: 25 червня 2024 року">
+				<div class="card-header bg-danger text-white">
+					Етап 5: Основна сесія НМТ
+				</div>
+				<div class="card-body">
+					Термін: 14 травня – 25 червня 2024 року
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<!-- Система підказок -->
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+			var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+				return new bootstrap.Tooltip(tooltipTriggerEl)
+			})
+		});
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
